@@ -17,10 +17,22 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div className="text-center">
+      <div className="mx-auto max-w-3xl text-center">
         <h1 className="text-3xl font-extrabold tracking-tight text-white lg:text-4xl">
-          Nuorten SM-moniottelut Laitilassa 24.-25. elokuuta
+          Nuorten SM-moniottelut 24.-25.8
         </h1>
+        <p className="mt-8 text-sm text-white/70">
+          Laitilan keskusurheilukenttä:{" "}
+          <span className="font-bold text-white">
+            Urheilutie 9, 23800 Laitila
+          </span>
+        </p>
+        <p className="text-sm text-white/70">
+          Sorvakon urheilukenttä:{" "}
+          <span className="font-bold text-white">
+            Etelälinjakatu 2, 23500 Uusikaupunki
+          </span>
+        </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <a
             href="https://www.kilpailukalenteri.fi/?cs=16&nid=34207"

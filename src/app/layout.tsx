@@ -41,7 +41,7 @@ export default function RootLayout({
                 }}
               />
             </div>
-            <div className="lg:py-48< px-4 py-40">{children}</div>
+            <div className="px-4 py-24 lg:py-48">{children}</div>
             <div
               className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
               aria-hidden="true"
