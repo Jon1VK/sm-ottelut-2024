@@ -11,8 +11,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "SM-moniottelut M/N 22-19-17",
-  description: "M/N 22-19-17 SM-moniotteluiden kotisivut",
+  title: "Nuorten SM-moniottelut",
+  description: "M/N 22-19-17 ja T/P14-15 SM-moniotteluiden kotisivut",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
@@ -24,11 +24,11 @@ export default function RootLayout({
   return (
     <html lang="fi">
       <body
-        className={`font-sans ${inter.variable} relative text-balance bg-gray-900`}
+        className={`font-sans ${inter.variable} relative h-full text-balance bg-gray-900`}
       >
         <TRPCReactProvider>
           <Header />
-          <main className="relative isolate overflow-hidden">
+          <main className="relative isolate h-full flex-1">
             <div
               className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
               aria-hidden="true"
