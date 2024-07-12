@@ -7,7 +7,7 @@ export default function Home() {
       <h1 className="mx-auto mb-24 max-w-3xl text-center text-3xl font-extrabold tracking-tight text-white lg:text-4xl">
         Nuorten SM-moniottelut 24.-25.8
       </h1>
-      <div className="flex justify-evenly">
+      <div className="flex flex-col items-center justify-evenly gap-16 lg:flex-row lg:gap-0">
         <div className="max-w-3xl text-center">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
@@ -39,7 +39,7 @@ export default function Home() {
               Ilmoittaudu <span aria-hidden="true">→</span>
             </a>
             <Link
-              href="#"
+              href="kilpailuohjeet"
               className="text-sm font-semibold leading-6 text-white"
             >
               Kilpailuohjeet <span aria-hidden="true">→</span>
@@ -77,7 +77,7 @@ export default function Home() {
               Ilmoittaudu <span aria-hidden="true">→</span>
             </a>
             <Link
-              href="#"
+              href="/kilpailuohjeet"
               className="text-sm font-semibold leading-6 text-white"
             >
               Kilpailuohjeet <span aria-hidden="true">→</span>

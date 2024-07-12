@@ -2,6 +2,7 @@ import "~/styles/globals.css";
 
 import { Inter } from "next/font/google";
 
+import Footer from "~/common/Footer";
 import Header from "~/common/Header";
 import { TRPCReactProvider } from "~/trpc/react";
 
@@ -55,6 +56,7 @@ export default function RootLayout({
               />
             </div>
           </main>
+          <Footer />
         </TRPCReactProvider>
       </body>
     </html>
