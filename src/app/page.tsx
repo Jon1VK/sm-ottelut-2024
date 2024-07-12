@@ -15,7 +15,7 @@ export default function Home() {
               <a
                 href="https://kilpailukalenteri.fi/?cs=16&nid=34207"
                 target="_blank"
-                className="font-semibold text-white"
+                className="font-semibold text-white hover:underline"
               >
                 Ilmoittaudu <span aria-hidden="true">→</span>
               </a>
@@ -39,8 +39,8 @@ export default function Home() {
               Ilmoittaudu <span aria-hidden="true">→</span>
             </a>
             <Link
-              href="kilpailuohjeet"
-              className="text-sm font-semibold leading-6 text-white"
+              href="/kilpailuohjeet"
+              className="text-sm font-semibold leading-6 text-white hover:underline"
             >
               Kilpailuohjeet <span aria-hidden="true">→</span>
             </Link>
@@ -53,7 +53,7 @@ export default function Home() {
               <a
                 href="https://kilpailukalenteri.fi/?cs=16&nid=34251"
                 target="_blank"
-                className="font-semibold text-white"
+                className="font-semibold text-white hover:underline"
               >
                 Ilmoittaudu <span aria-hidden="true">→</span>
               </a>
@@ -78,7 +78,7 @@ export default function Home() {
             </a>
             <Link
               href="/kilpailuohjeet"
-              className="text-sm font-semibold leading-6 text-white"
+              className="text-sm font-semibold leading-6 text-white hover:underline"
             >
               Kilpailuohjeet <span aria-hidden="true">→</span>
             </Link>
