@@ -110,7 +110,7 @@ export default function Home() {
           },
         ]}
       />
-      <LogoCloud
+      {/* <LogoCloud
         title="Yhteistyökumppanit"
         logos={[
           {
@@ -169,7 +169,7 @@ export default function Home() {
             href: "https://www.vsv.fi",
           },
         ]}
-      />
+      /> */}
     </>
   );
 }
