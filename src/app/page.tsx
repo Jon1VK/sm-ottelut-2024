@@ -60,7 +60,7 @@ export default function Home() {
             </div>
           </div>
           <h2 className="text-3xl font-extrabold tracking-tight text-white lg:text-4xl">
-            T/P14-15
+            T/P 14-15
           </h2>
           <p className="mt-10 text-sm text-white/70">
             Sorvakon urheilukenttä:{" "}
