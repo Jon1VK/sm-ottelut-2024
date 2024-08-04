@@ -52,7 +52,7 @@ export default function Footer() {
               <li key={location}>
                 <a
                   target="_blank"
-                  href={`/aluekartta-${location.toLowerCase()}`}
+                  href={`/aluekartta-${location.toLowerCase()}.pdf`}
                   className="z-50 flex items-center gap-2 text-base font-semibold uppercase leading-7 tracking-tight text-white hover:underline"
                 >
                   <svg
