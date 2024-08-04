@@ -29,7 +29,7 @@ export default function RootLayout({
       >
         <TRPCReactProvider>
           <Header />
-          <main className="relative isolate h-full flex-1">
+          <main className="relative h-full flex-1">
             <div
               className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
               aria-hidden="true"
