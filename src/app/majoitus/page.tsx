@@ -7,7 +7,7 @@ export default function Majoitus() {
       <div className="prose prose-invert m-auto max-w-[80ch]">
         <h2>Laitilan Kievari</h2>
         <p>
-          Keskuskatu 11, 23800 Laitila
+          Keskuskatu 12, 23800 Laitila
           <br />
           Lisätietoa:{" "}
           <a href="https://laitilankievari.fi/hotelli/" target="_blank">
