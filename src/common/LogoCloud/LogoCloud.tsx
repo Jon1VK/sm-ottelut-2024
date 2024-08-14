@@ -20,11 +20,11 @@ const LogoCloud = (props: LogoCloudProps) => {
           {props.logos.map((logo) => (
             <li
               key={logo.src}
-              className="flex items-center justify-center bg-gray-100/95"
+              className="flex min-h-36 items-center justify-center bg-gray-100/95"
             >
               <a href={logo.href} target="_blank" className="p-2 sm:p-4">
                 <Image
-                  className="max-h-24 w-full scale-90 object-contain grayscale transition-all duration-300 hover:scale-100 hover:grayscale-0"
+                  className="max-h-24 w-full scale-90 object-contain mix-blend-multiply grayscale transition-all duration-300 hover:scale-100 hover:grayscale-0"
                   src={logo.src}
                   alt={logo.alt}
                   quality={100}

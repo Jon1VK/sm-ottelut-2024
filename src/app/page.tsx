@@ -1,5 +1,4 @@
 import Link from "next/link";
-import LogoCloud from "~/common/LogoCloud/LogoCloud";
 
 export default function Home() {
   return (
@@ -85,91 +84,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <LogoCloud
-        title="Kilpailuja järjestämässä"
-        logos={[
-          {
-            src: "/laitila.png",
-            alt: "Laitila",
-            href: "https://www.laitila.fi",
-          },
-          {
-            src: "/uusikaupunki.png",
-            alt: "Uusikaupunki",
-            href: "https://uusikaupunki.fi",
-          },
-          {
-            src: "/jyske.png",
-            alt: "Laitilan Jyske",
-            href: "https://laitilanjyskeyleisurheilu.fi",
-          },
-          {
-            src: "/ukk.png",
-            alt: "Uudenkaupungin kenttäkarhut",
-            href: "http://www.uudenkaupunginkenttakarhut.fi",
-          },
-        ]}
-      />
-      {/* <LogoCloud
-        title="Yhteistyökumppanit"
-        logos={[
-          {
-            src: "/dekra.png",
-            alt: "Dekra",
-            href: "https://www.dekra.fi",
-          },
-          {
-            src: "/kiwa.png",
-            alt: "Kiwa",
-            href: "https://www.inspecta.fi",
-          },
-          {
-            src: "/ksupermarket.png",
-            alt: "K-Supermarket Laitila",
-            href: "https://www.k-supermarket.fi/kaupat/laitila",
-          },
-          {
-            src: "/laitilanpuhelin.png",
-            alt: "Laitilan Puhelin",
-            href: "https://www.laitilanpuhelin.fi",
-          },
-          {
-            src: "/lwt.png",
-            alt: "Laitilan Wirvoitusjuomatehdas",
-            href: "https://laitilan.com",
-          },
-          {
-            src: "/op.png",
-            alt: "OP Lounaisrannikko",
-            href: "https://www.op.fi//web/op-lounaisrannikko",
-          },
-          {
-            src: "/terveyskoti.png",
-            alt: "Laitilan Terveyskoti",
-            href: "https://terveyskoti.fi",
-          },
-          {
-            src: "/vahterus.png",
-            alt: "Vahterus",
-            href: "https://www.vahterus.com",
-          },
-          {
-            src: "/valmet.png",
-            alt: "Valmet Automotive",
-            href: "https://www.valmet-automotive.com",
-          },
-          {
-            src: "/vihannes.png",
-            alt: "Vihannes Laitila",
-            href: "http://www.vihanneslaitila.fi",
-          },
-          {
-            src: "/vsv.png",
-            alt: "VSV Yhtiöt",
-            href: "https://www.vsv.fi",
-          },
-        ]}
-      /> */}
     </>
   );
 }

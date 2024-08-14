@@ -1,3 +1,5 @@
+import LogoCloud from "../LogoCloud/LogoCloud";
+
 const people = [
   {
     role: "Järjestelytoimikunnan puheenjohtaja",
@@ -37,6 +39,61 @@ const judges = [
 export default function Footer() {
   return (
     <footer>
+      <LogoCloud
+        title="Kilpailuja järjestämässä"
+        logos={[
+          {
+            src: "/laitila.png",
+            alt: "Laitila",
+            href: "https://www.laitila.fi",
+          },
+          {
+            src: "/uusikaupunki.png",
+            alt: "Uusikaupunki",
+            href: "https://uusikaupunki.fi",
+          },
+          {
+            src: "/jyske.png",
+            alt: "Laitilan Jyske",
+            href: "https://laitilanjyskeyleisurheilu.fi",
+          },
+          {
+            src: "/ukk.png",
+            alt: "Uudenkaupungin kenttäkarhut",
+            href: "http://www.uudenkaupunginkenttakarhut.fi",
+          },
+        ]}
+      />
+      <LogoCloud
+        title="Yhteistyökumppanit"
+        logos={[
+          {
+            src: "/op.png",
+            alt: "OP Lounaisrannikko",
+            href: "https://www.op.fi/web/op-lounaisrannikko",
+          },
+          {
+            src: "/vahterus.png",
+            alt: "Vahterus",
+            href: "https://www.vahterus.com",
+          },
+          {
+            src: "/vsp.png",
+            alt: "Vakka-Suomen Puhelin Oy",
+            href: "https://www.vsp.fi",
+          },
+          {
+            src: "/vsv.png",
+            alt: "VSV Yhtiöt",
+            href: "https://www.vsv.fi",
+          },
+          {
+            src: "/vv.png",
+            alt: "Vahva Virta",
+            href: "https://laitilanpuhelin.fi/vahvavirta/",
+          },
+        ]}
+      />
       <div className="pb-24 sm:pb-32">
         <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-8 px-6 lg:px-8 xl:grid-cols-3">
           <div className="max-w-2xl">
