@@ -73,6 +73,11 @@ export default function Footer() {
             href: "https://www.op.fi/web/op-lounaisrannikko",
           },
           {
+            src: "/prismarit.png",
+            alt: "Prismarit Oy",
+            href: "https://prismarit.fi/",
+          },
+          {
             src: "/vahterus.png",
             alt: "Vahterus",
             href: "https://www.vahterus.com",
