@@ -27,6 +27,7 @@ const timeTablesLaitila = [
         events: [
           { sarja: "M22", event: "100m" },
           { sarja: "N22", event: "Korkeus (paikka 1)" },
+          { sarja: "N19", event: "Korkeus (paikka 2)" },
         ],
       },
       {
@@ -45,7 +46,7 @@ const timeTablesLaitila = [
         events: [{ sarja: "M17", event: "100m" }],
       },
       {
-        time: "12:30",
+        time: "12:40",
         events: [{ sarja: "N17", event: "Korkeus (paikat 1 ja 2)" }],
       },
       {
@@ -92,11 +93,11 @@ const timeTablesLaitila = [
         events: [{ sarja: "M19", event: "400m" }],
       },
       {
-        time: "17:50",
+        time: "18:00",
         events: [{ sarja: "N17", event: "200m" }],
       },
       {
-        time: "18:15",
+        time: "18:25",
         events: [{ sarja: "M17", event: "400m" }],
       },
     ],
@@ -138,41 +139,43 @@ const timeTablesLaitila = [
         events: [{ sarja: "N17", event: "Keihäs" }],
       },
       {
-        time: "14:30",
+        time: "14:15",
         events: [{ sarja: "M17", event: "Seiväs (paikat 1 ja 2)" }],
       },
       {
+        time: "14:45",
+        events: [{ sarja: "N22, N19", event: "Keihäs" }],
+      },
+      {
         time: "15:30",
-        events: [
-          { sarja: "N17", event: "800m" },
-          { sarja: "N22, N19", event: "Keihäs" },
-        ],
+        events: [{ sarja: "N17", event: "800m" }],
+      },
+      {
+        time: "16:05",
+        events: [{ sarja: "M22, M19", event: "Keihäs" }],
       },
       {
         time: "16:45",
-        events: [
-          { sarja: "N22", event: "800m" },
-          { sarja: "M22, M19", event: "Keihäs" },
-        ],
+        events: [{ sarja: "N22", event: "800m" }],
       },
       {
         time: "16:55",
         events: [{ sarja: "N19", event: "800m" }],
       },
       {
-        time: "18:00",
+        time: "17:15",
         events: [{ sarja: "M17", event: "Keihäs" }],
       },
       {
-        time: "18:15",
+        time: "17:20",
         events: [{ sarja: "M22", event: "1500" }],
       },
       {
-        time: "18:25",
+        time: "17:30",
         events: [{ sarja: "M19", event: "1500" }],
       },
       {
-        time: "19:45",
+        time: "18:25",
         events: [{ sarja: "M17", event: "1500" }],
       },
     ],
@@ -388,7 +391,7 @@ export default function Aikataulut() {
   return (
     <>
       <h1 className="mx-auto mb-16 max-w-fit rounded-bl-[25%] rounded-tr-[25%] border px-4 py-2 text-center text-xl font-semibold tracking-tight text-white md:px-12">
-        Alustavat aikataulut
+        Aikataulut
       </h1>
       <Tab.Group>
         <Tab.List className="isolate m-auto mb-16 flex max-w-max divide-x divide-indigo-800 rounded-lg shadow">
