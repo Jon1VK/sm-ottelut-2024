@@ -193,93 +193,79 @@ const timeTablesUki = [
         events: [{ sarja: "P14", event: "Varmistusaika päättyy" }],
       },
       {
-        time: "8:55",
+        time: "9:10",
         events: [{ sarja: "T14", event: "Varmistusaika päättyy" }],
       },
       {
-        time: "9:20",
-        events: [{ sarja: "P14", event: "Kokoontuminen auki" }],
-      },
-      {
-        time: "9:35",
-        events: [{ sarja: "P14", event: "Kokoontuminen kiinni" }],
+        time: "9:20-9:35",
+        events: [{ sarja: "P14", event: "Kokoontuminen (auki-kiinni)" }],
       },
       {
         time: "9:45",
-        events: [{ sarja: "T14", event: "Kokoontuminen auki" }],
-      },
-      {
-        time: "9:50",
-        events: [{ sarja: "", event: "Kisojen avajaiset" }],
+        events: [{ sarja: "", event: "Kilpailujen avajaiset" }],
       },
       {
         time: "10:00",
+        events: [{ sarja: "P14", event: "80m aj" }],
+      },
+      {
+        time: "10:00-10:27",
         events: [
-          { sarja: "T14", event: "Kokoontuminen kiinni" },
-          { sarja: "P14", event: "80m aj" },
+          { sarja: "T14", event: "Kokoontuminen (auki-kiinni)" },
+          { sarja: "Erät 1-2", event: "10:00-10:15" },
+          { sarja: "Erät 3-4", event: "10:04-10:19" },
+          { sarja: "Erät 5-6", event: "10:08-10:23" },
+          { sarja: "Erät 7-8", event: "10:12-10:27" },
         ],
       },
       {
-        time: "10:20",
+        time: "10:40",
         events: [{ sarja: "T14", event: "80m aj" }],
       },
       {
-        time: "10:45",
+        time: "10:55",
         events: [{ sarja: "P14", event: "Pituus (paikka 2)" }],
       },
       {
-        time: "11:20",
+        time: "11:55",
         events: [{ sarja: "T14 ryhmä A", event: "Pituus (paikka 1)" }],
       },
       {
-        time: "11:15-12:30",
-        events: [
-          { sarja: "T14 ryhmä B", event: "Ruokailu (tai pituushypyn jälkeen)" },
-        ],
-      },
-      {
-        time: "12:00",
+        time: "12:40",
         events: [{ sarja: "P14", event: "Keihäs" }],
       },
       {
-        time: "12:30-13:15",
-        events: [
-          { sarja: "P14", event: "Ruokailu" },
-          { sarja: "T14 ryhmä A", event: "Ruokailu" },
-        ],
-      },
-      {
-        time: "13:00",
+        time: "13:50",
         events: [{ sarja: "T14 ryhmä B", event: "Pituus (paikka 1)" }],
       },
       {
-        time: "13:30",
+        time: "14:00",
         events: [{ sarja: "T14 ryhmä A", event: "Keihäs" }],
       },
       {
-        time: "14:00",
+        time: "14:45",
         events: [
           { sarja: "P14 ryhmä A", event: "Seiväs (paikka 1)" },
           { sarja: "P14 ryhmä B", event: "Seiväs (paikka 2)" },
         ],
       },
       {
-        time: "14:45",
+        time: "15:55",
         events: [{ sarja: "T14 ryhmä B", event: "Keihäs" }],
       },
       {
-        time: "16:05",
+        time: "17:30",
         events: [
           { sarja: "T14 ryhmä A", event: "Korkeus (paikka 1)" },
-          { sarja: "T14 ryhmä B", event: "Korkeus (paikka 1)" },
+          { sarja: "T14 ryhmä B", event: "Korkeus (paikka 2)" },
         ],
       },
       {
-        time: "16:15",
+        time: "18:00",
         events: [{ sarja: "P14", event: "1000m" }],
       },
       {
-        time: "17:55",
+        time: "20:05",
         events: [{ sarja: "T14", event: "800m" }],
       },
     ],
@@ -292,93 +278,68 @@ const timeTablesUki = [
         events: [{ sarja: "P15", event: "Varmistusaika päättyy" }],
       },
       {
-        time: "8:55",
+        time: "9:55",
         events: [{ sarja: "T15", event: "Varmistusaika päättyy" }],
       },
       {
-        time: "9:20",
-        events: [{ sarja: "P15", event: "Kokoontuminen auki" }],
-      },
-      {
-        time: "9:35",
-        events: [{ sarja: "P15", event: "Kokoontuminen kiinni" }],
-      },
-      {
-        time: "9:45",
-        events: [{ sarja: "T15", event: "Kokoontuminen auki" }],
-      },
-      {
-        time: "9:50",
-        events: [{ sarja: "", event: "Kisojen avajaiset" }],
+        time: "9:20-9:35",
+        events: [{ sarja: "P15", event: "Kokoontuminen (auki-kiinni)" }],
       },
       {
         time: "10:00",
-        events: [
-          { sarja: "T15", event: "Kokoontuminen kiinni" },
-          { sarja: "P15", event: "100m aj" },
-        ],
+        events: [{ sarja: "P15", event: "100m aj" }],
       },
       {
-        time: "10:20",
-        events: [{ sarja: "T15", event: "80m aj" }],
+        time: "10:45-11:00",
+        events: [{ sarja: "T15", event: "Kokoontuminen (auki-kiinni)" }],
       },
       {
-        time: "10:45",
+        time: "10:50",
         events: [{ sarja: "P15", event: "Pituus (paikka 2)" }],
       },
       {
-        time: "11:20",
-        events: [{ sarja: "T15 ryhmä A", event: "Pituus (paikka 1)" }],
+        time: "11:25",
+        events: [{ sarja: "T15", event: "80m aj" }],
       },
       {
-        time: "11:45-12:30",
+        time: "12:20",
         events: [
-          { sarja: "T15 ryhmä B", event: "Ruokailu (tai pituushypyn jälkeen)" },
+          { sarja: "T15 ryhmä A", event: "Pituus (paikka 1)" },
+          { sarja: "P15", event: "Keihäs (paikka 1)" },
         ],
-      },
-      {
-        time: "12:00",
-        events: [{ sarja: "P15", event: "Keihäs" }],
-      },
-      {
-        time: "12:30-13:15",
-        events: [
-          { sarja: "P15", event: "Ruokailu" },
-          { sarja: "T15 ryhmä A", event: "Ruokailu" },
-        ],
-      },
-      {
-        time: "13:00",
-        events: [{ sarja: "T15 ryhmä B", event: "Pituus (paikka 1)" }],
       },
       {
         time: "13:30",
-        events: [{ sarja: "T15 ryhmä A", event: "Keihäs" }],
+        events: [{ sarja: "T15 ryhmä B", event: "Pituus (paikka 1)" }],
       },
       {
         time: "14:00",
+        events: [{ sarja: "T15 ryhmä A", event: "Keihäs (paikka 1)" }],
+      },
+      {
+        time: "14:15",
         events: [
           { sarja: "P15 ryhmä A", event: "Seiväs (paikka 1)" },
           { sarja: "P15 ryhmä B", event: "Seiväs (paikka 2)" },
         ],
       },
       {
-        time: "14:45",
-        events: [{ sarja: "T15 ryhmä B", event: "Keihäs" }],
+        time: "15:10",
+        events: [{ sarja: "T15 ryhmä B", event: "Keihäs (paikka 1)" }],
       },
       {
-        time: "16:05",
+        time: "16:25",
         events: [
           { sarja: "T15 ryhmä A", event: "Korkeus (paikka 1)" },
-          { sarja: "T15 ryhmä B", event: "Korkeus (paikka 1)" },
+          { sarja: "T15 ryhmä B", event: "Korkeus (paikka 2)" },
         ],
       },
       {
-        time: "16:15",
+        time: "16:45",
         events: [{ sarja: "P15", event: "1000m" }],
       },
       {
-        time: "17:55",
+        time: "18:00",
         events: [{ sarja: "T15", event: "800m" }],
       },
     ],
@@ -422,6 +383,9 @@ export default function Aikataulut() {
         </Tab.List>
         <Tab.Panels>
           <Tab.Panel>
+            <p className="m-auto mb-12 text-center font-bold text-white">
+              Aikataulut päivitetty 21.8.2024 klo 22:00
+            </p>
             <div className="m-auto grid w-full grid-cols-1 gap-x-8 gap-y-16 text-white md:grid-cols-2 lg:max-w-7xl">
               {timeTablesLaitila.map(({ title, timetable }) => (
                 <TimeTableComponent
@@ -433,6 +397,9 @@ export default function Aikataulut() {
             </div>
           </Tab.Panel>
           <Tab.Panel>
+            <p className="m-auto mb-12 text-center font-bold text-white">
+              Aikataulut päivitetty 21.8.2024 klo 22:00
+            </p>
             <div className="m-auto grid w-full grid-cols-1 gap-x-8 gap-y-16 text-white md:grid-cols-2 lg:max-w-7xl">
               {timeTablesUki.map(({ title, timetable }) => (
                 <TimeTableComponent
