@@ -44,11 +44,17 @@ export default function Kilpailuohjeet() {
         </Tab.List>
         <Tab.Panels>
           <Tab.Panel>
+            <p className="m-auto mb-12 text-center font-bold text-white">
+              Kilpailuohjeet päivitetty 21.8.2024 klo 22:00
+            </p>
             <div className="prose prose-invert m-auto max-w-[80ch]">
               <KilpailuohjeetLaitila />
             </div>
           </Tab.Panel>
           <Tab.Panel>
+            <p className="m-auto mb-12 text-center font-bold text-white">
+              Kilpailuohjeet päivitetty 21.8.2024 klo 22:00
+            </p>
             <div className="prose prose-invert m-auto max-w-[80ch]">
               <KilpailuohjeetUki />
             </div>
