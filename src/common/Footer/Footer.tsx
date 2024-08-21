@@ -103,18 +103,22 @@ export default function Footer() {
         <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-8 px-6 lg:px-8 xl:grid-cols-3">
           <div className="max-w-2xl">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Aluekartat
+              Kartat
             </h2>
           </div>
           <ul
             role="list"
             className="grid items-start gap-x-8 gap-y-4 sm:grid-cols-2 xl:col-span-2"
           >
-            {["Laitila", "Uusikaupunki"].map((location) => (
+            {[
+              "Aluekartta Laitila",
+              "Kenttäalue Uusikaupunki",
+              "Pysäköinti Uusikaupunki",
+            ].map((location) => (
               <li key={location}>
                 <a
                   target="_blank"
-                  href={`/aluekartta-${location.toLowerCase()}.pdf`}
+                  href={`/${location}.pdf`}
                   className="z-50 flex items-center gap-2 text-base font-semibold uppercase leading-7 tracking-tight text-white hover:underline"
                 >
                   <svg
