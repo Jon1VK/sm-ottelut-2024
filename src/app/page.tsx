@@ -24,11 +24,11 @@ export default function Home() {
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
-              href="https://kilpailukalenteri.fi/?cs=16&nid=34207"
+              href="https://live.tuloslista.com/15954"
               target="_blank"
               className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
             >
-              Kilpailukalenteri <span aria-hidden="true">→</span>
+              LIVE-tulokset <span aria-hidden="true">→</span>
             </a>
             <Link
               href="/kilpailuohjeet"
@@ -51,11 +51,11 @@ export default function Home() {
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
-              href="https://kilpailukalenteri.fi/?cs=16&nid=34251"
+              href="https://live.tuloslista.com/15960"
               target="_blank"
               className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
             >
-              Kilpailukalenteri <span aria-hidden="true">→</span>
+              LIVE-tulokset <span aria-hidden="true">→</span>
             </a>
             <Link
               href="/kilpailuohjeet"

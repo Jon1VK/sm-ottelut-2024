@@ -65,7 +65,7 @@ export default function Footer() {
         ]}
       />
       <LogoCloud
-        title="Yhteistyökumppanit"
+        title="Pääyhteistyökumppanit"
         logos={[
           {
             src: "/op.png",
@@ -99,6 +99,70 @@ export default function Footer() {
           },
         ]}
       />
+      <div className="pb-24 sm:pb-32">
+        <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-8 px-6 lg:px-8 xl:grid-cols-3">
+          <div className="max-w-2xl">
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Lajitukijat
+            </h2>
+          </div>
+          <ul
+            role="list"
+            className="grid items-start gap-x-8 gap-y-4 sm:grid-cols-2 xl:col-span-2"
+          >
+            {[
+              "Lounaisrannikon Osuuspankki",
+              "Vakka-Suomen Voima",
+              "Laitilan Virvoitusjuomatehdas",
+              "LP Vahvavirta Osk",
+              "Rakennepalvelu Jurva Rinne Oy",
+              "Jätehuolto M. Helistölä Oy",
+              "Rakennus Lehtonen Oy",
+              "V-S Metalli Oy",
+            ].map((sponsor) => (
+              <li
+                key={sponsor}
+                className="text-base font-semibold leading-7 tracking-tight text-white"
+              >
+                {sponsor}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <div className="pb-24 sm:pb-32">
+        <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-8 px-6 lg:px-8 xl:grid-cols-3">
+          <div className="max-w-2xl">
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Muut yhteistyökumppanit
+            </h2>
+          </div>
+          <ul
+            role="list"
+            className="grid items-start gap-x-8 gap-y-4 sm:grid-cols-2 xl:col-span-2"
+          >
+            {[
+              "Rakenne Uusikaupunki",
+              "Telmarin Oy",
+              "Laitilan IP-työ Oy",
+              "Veme Oy",
+              "Sami Jäspilä Oy",
+              "Finnbrode Ky",
+              "HMH-Poraus Oy",
+              "HTG-Asfaltti Oy",
+              "K-Supermarket Laitila",
+              "Laitilan Kievari Ky",
+            ].map((sponsor) => (
+              <li
+                key={sponsor}
+                className="text-base font-semibold leading-7 tracking-tight text-white"
+              >
+                {sponsor}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
       <div className="pb-24 sm:pb-32">
         <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-8 px-6 lg:px-8 xl:grid-cols-3">
           <div className="max-w-2xl">
