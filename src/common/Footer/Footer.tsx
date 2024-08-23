@@ -272,6 +272,11 @@ export default function Footer() {
           </ul>
         </div>
       </div>
+      <div className="mx-auto max-w-7xl px-6 pb-12 lg:px-8">
+        <p className="text-sm font-semibold leading-6 text-white/90">
+          &#169; Joni Vainio-Kaila 2024
+        </p>
+      </div>
     </footer>
   );
 }
