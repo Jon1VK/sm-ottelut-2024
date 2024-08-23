@@ -227,37 +227,36 @@ const timeTablesUki = [
         events: [{ sarja: "P14", event: "Pituus (paikka 2)" }],
       },
       {
-        time: "11:55",
-        events: [{ sarja: "T14 ryhmä A", event: "Pituus (paikka 1)" }],
+        time: "12:15",
+        events: [{ sarja: "T14 ryhmä 1", event: "Pituus (paikka 1)" }],
       },
       {
         time: "12:40",
         events: [{ sarja: "P14", event: "Keihäs" }],
       },
       {
-        time: "13:50",
-        events: [{ sarja: "T14 ryhmä B", event: "Pituus (paikka 1)" }],
-      },
-      {
         time: "14:00",
-        events: [{ sarja: "T14 ryhmä A", event: "Keihäs" }],
+        events: [
+          { sarja: "T14 ryhmä 2", event: "Pituus (paikka 1)" },
+          { sarja: "T14 ryhmä 1", event: "Keihäs (paikka 1)" },
+        ],
       },
       {
         time: "14:45",
         events: [
-          { sarja: "P14 ryhmä A", event: "Seiväs (paikka 1)" },
-          { sarja: "P14 ryhmä B", event: "Seiväs (paikka 2)" },
+          { sarja: "P14 ryhmä 1", event: "Seiväs (paikka 1)" },
+          { sarja: "P14 ryhmä 2", event: "Seiväs (paikka 2)" },
         ],
       },
       {
         time: "15:55",
-        events: [{ sarja: "T14 ryhmä B", event: "Keihäs" }],
+        events: [{ sarja: "T14 ryhmä 2", event: "Keihäs (paikka 1)" }],
       },
       {
         time: "17:30",
         events: [
-          { sarja: "T14 ryhmä A", event: "Korkeus (paikka 1)" },
-          { sarja: "T14 ryhmä B", event: "Korkeus (paikka 2)" },
+          { sarja: "T14 ryhmä 1", event: "Korkeus (paikka 1)" },
+          { sarja: "T14 ryhmä 2", event: "Korkeus (paikka 2)" },
         ],
       },
       {
@@ -278,12 +277,12 @@ const timeTablesUki = [
         events: [{ sarja: "P15", event: "Varmistusaika päättyy" }],
       },
       {
-        time: "9:55",
-        events: [{ sarja: "T15", event: "Varmistusaika päättyy" }],
-      },
-      {
         time: "9:20-9:35",
         events: [{ sarja: "P15", event: "Kokoontuminen (auki-kiinni)" }],
+      },
+      {
+        time: "9:55",
+        events: [{ sarja: "T15", event: "Varmistusaika päättyy" }],
       },
       {
         time: "10:00",
@@ -304,34 +303,34 @@ const timeTablesUki = [
       {
         time: "12:20",
         events: [
-          { sarja: "T15 ryhmä A", event: "Pituus (paikka 1)" },
           { sarja: "P15", event: "Keihäs (paikka 1)" },
+          { sarja: "T15 ryhmä 1", event: "Pituus (paikka 1)" },
         ],
       },
       {
         time: "13:30",
-        events: [{ sarja: "T15 ryhmä B", event: "Pituus (paikka 1)" }],
+        events: [{ sarja: "T15 ryhmä 2", event: "Pituus (paikka 1)" }],
       },
       {
         time: "14:00",
-        events: [{ sarja: "T15 ryhmä A", event: "Keihäs (paikka 1)" }],
+        events: [{ sarja: "T15 ryhmä 1", event: "Keihäs (paikka 1)" }],
       },
       {
         time: "14:15",
         events: [
-          { sarja: "P15 ryhmä A", event: "Seiväs (paikka 1)" },
-          { sarja: "P15 ryhmä B", event: "Seiväs (paikka 2)" },
+          { sarja: "P15 ryhmä 1", event: "Seiväs (paikka 1)" },
+          { sarja: "P15 ryhmä 2", event: "Seiväs (paikka 2)" },
         ],
       },
       {
         time: "15:10",
-        events: [{ sarja: "T15 ryhmä B", event: "Keihäs (paikka 1)" }],
+        events: [{ sarja: "T15 ryhmä 2", event: "Keihäs (paikka 1)" }],
       },
       {
         time: "16:25",
         events: [
-          { sarja: "T15 ryhmä A", event: "Korkeus (paikka 1)" },
-          { sarja: "T15 ryhmä B", event: "Korkeus (paikka 2)" },
+          { sarja: "T15 ryhmä 1", event: "Korkeus (paikka 1)" },
+          { sarja: "T15 ryhmä 2", event: "Korkeus (paikka 2)" },
         ],
       },
       {
@@ -384,7 +383,7 @@ export default function Aikataulut() {
         <Tab.Panels>
           <Tab.Panel>
             <p className="m-auto mb-12 text-center font-bold text-white">
-              Aikataulut päivitetty 21.8.2024 klo 22:00
+              Aikataulu päivitetty 21.8.2024 klo 22:00
             </p>
             <div className="m-auto grid w-full grid-cols-1 gap-x-8 gap-y-16 text-white md:grid-cols-2 lg:max-w-7xl">
               {timeTablesLaitila.map(({ title, timetable }) => (
@@ -398,7 +397,7 @@ export default function Aikataulut() {
           </Tab.Panel>
           <Tab.Panel>
             <p className="m-auto mb-12 text-center font-bold text-white">
-              Aikataulut päivitetty 21.8.2024 klo 22:00
+              Aikataulu päivitetty 23.8.2024 klo 22:00
             </p>
             <div className="m-auto grid w-full grid-cols-1 gap-x-8 gap-y-16 text-white md:grid-cols-2 lg:max-w-7xl">
               {timeTablesUki.map(({ title, timetable }) => (
