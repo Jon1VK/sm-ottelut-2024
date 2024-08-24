@@ -224,7 +224,7 @@ const timeTablesUki = [
       },
       {
         time: "10:55",
-        events: [{ sarja: "P14", event: "Pituus (paikka 2)" }],
+        events: [{ sarja: "P14", event: "Pituus (paikka 1)" }],
       },
       {
         time: "12:15",
@@ -294,7 +294,7 @@ const timeTablesUki = [
       },
       {
         time: "10:50",
-        events: [{ sarja: "P15", event: "Pituus (paikka 2)" }],
+        events: [{ sarja: "P15", event: "Pituus (paikka 1)" }],
       },
       {
         time: "11:25",
@@ -397,7 +397,7 @@ export default function Aikataulut() {
           </Tab.Panel>
           <Tab.Panel>
             <p className="m-auto mb-12 text-center font-bold text-white">
-              Aikataulu päivitetty 23.8.2024 klo 22:00
+              Aikataulu päivitetty 24.8.2024 klo 8:00
             </p>
             <div className="m-auto grid w-full grid-cols-1 gap-x-8 gap-y-16 text-white md:grid-cols-2 lg:max-w-7xl">
               {timeTablesUki.map(({ title, timetable }) => (
