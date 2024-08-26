@@ -8,9 +8,14 @@ export default function Home() {
   const setSelectedTabIndex = useSetAtom(selectedTabIndexAtom);
   return (
     <>
-      <h1 className="mx-auto mb-24 max-w-3xl text-center text-3xl font-extrabold tracking-tight text-white lg:text-4xl">
+      <h1 className="mx-auto mb-12 max-w-3xl text-center text-3xl font-extrabold tracking-tight text-white lg:text-4xl">
         Nuorten SM-moniottelut 24.-25.8
       </h1>
+      <p className="mx-auto mb-24 max-w-3xl text-center text-white">
+        Kiitos urheilijoille, järjestäjille, toimitsijoille ja tukijoille
+        kilpailuista! Lopulliset tulokset päivitetään sivuille mahdollisimman
+        pian.
+      </p>
       <div className="flex flex-col items-center justify-evenly gap-16 lg:flex-row lg:gap-0">
         <div className="max-w-3xl text-center">
           <h2 className="text-3xl font-extrabold tracking-tight text-white lg:text-4xl">
