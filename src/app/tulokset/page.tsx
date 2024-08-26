@@ -49,6 +49,14 @@ export default function Home() {
                     LIVE-tulokset
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="https://drive.google.com/drive/folders/1e0aaId3R-8P6ZH2OYPWIxJ7JVclCGaat?usp=sharing"
+                    target="_blank"
+                  >
+                    Maalikamerakuvat
+                  </a>
+                </li>
               </ul>
             </div>
           </Tab.Panel>
