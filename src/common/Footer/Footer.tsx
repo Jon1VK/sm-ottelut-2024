@@ -3,9 +3,9 @@ import LogoCloud from "../LogoCloud/LogoCloud";
 const people = [
   {
     role: "Järjestelytoimikunnan puheenjohtaja",
-    name: "Ilmari Vuorela",
-    phone: "044 317 6304",
-    email: "ilmari.vuorela@gmail.com",
+    name: "Laura Lehtoruusu",
+    phone: "044 288 4380",
+    email: "laura.lehtoruusu@gmail.com",
   },
   {
     role: "Kilpailutoimikunta",
@@ -30,9 +30,9 @@ const judges = [
   },
   {
     role: "Uusikaupunki",
-    name: "Hermann Kössi",
-    phone: "041 549 8007",
-    email: "hermann.kossi@kolumbus.fi",
+    name: "Teija Kurra",
+    phone: "040 828 9221",
+    email: "tkurra@gmail.com",
   },
 ];
 
@@ -68,9 +68,9 @@ export default function Footer() {
         title="Pääyhteistyökumppanit"
         logos={[
           {
-            src: "/op.png",
-            alt: "OP Lounaisrannikko",
-            href: "https://www.op.fi/web/op-lounaisrannikko",
+            src: "/op.svg",
+            alt: "OP Varsinais-Suomi",
+            href: "https://www.op.fi/osuuspankit/op-varsinais-suomi/",
           },
           {
             src: "/prismarit.png",
@@ -99,7 +99,7 @@ export default function Footer() {
           },
         ]}
       />
-      <div className="pb-24 sm:pb-32">
+      {/* <div className="pb-24 sm:pb-32">
         <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-8 px-6 lg:px-8 xl:grid-cols-3">
           <div className="max-w-2xl">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -162,7 +162,7 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-      </div>
+      </div> */}
       <div className="pb-24 sm:pb-32">
         <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-8 px-6 lg:px-8 xl:grid-cols-3">
           <div className="max-w-2xl">
@@ -274,7 +274,12 @@ export default function Footer() {
       </div>
       <div className="mx-auto max-w-7xl px-6 pb-12 lg:px-8">
         <p className="text-sm font-semibold leading-6 text-white/90">
-          &#169; Joni Vainio-Kaila 2024
+          <a
+            href="https://www.linkedin.com/in/jonivainiokaila/"
+            className="hover:underline"
+          >
+            &#169; Joni Vainio-Kaila 2026
+          </a>
         </p>
       </div>
     </footer>

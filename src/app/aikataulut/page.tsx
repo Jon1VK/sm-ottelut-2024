@@ -1,6 +1,5 @@
 "use client";
 
-import { Tab } from "@headlessui/react";
 import { useAtom } from "jotai";
 import { Fragment } from "react";
 import { selectedTabIndexAtom } from "../atoms";
@@ -356,7 +355,12 @@ export default function Aikataulut() {
       <h1 className="mx-auto mb-16 max-w-fit rounded-bl-[25%] rounded-tr-[25%] border px-4 py-2 text-center text-xl font-semibold tracking-tight text-white md:px-12">
         Aikataulut
       </h1>
-      <Tab.Group
+      <p className="mx-auto mb-24 max-w-3xl text-center text-white">
+        Aikataulut julkaistaan ilmoittautumisajan päätyttyä. Aikataulut
+        päivittyvät ensin kilpailukalenteriin, joten katso viimeisimmät
+        aikataulut sieltä.
+      </p>
+      {/* <Tab.Group
         selectedIndex={selectedTabIndex}
         onChange={setSelectedTabIndex}
       >
@@ -410,7 +414,7 @@ export default function Aikataulut() {
             </div>
           </Tab.Panel>
         </Tab.Panels>
-      </Tab.Group>
+      </Tab.Group> */}
     </>
   );
 }

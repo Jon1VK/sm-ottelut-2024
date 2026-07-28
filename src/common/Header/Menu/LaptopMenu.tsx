@@ -18,7 +18,7 @@ const LaptopMenu = (props: LaptopMenuProps) => {
           <li key={link.name}>
             <Link
               href={link.href}
-              className="text-sm font-semibold leading-6 text-white"
+              className="font-semibold leading-6 text-white"
             >
               {link.name}
             </Link>

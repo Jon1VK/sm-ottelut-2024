@@ -45,17 +45,17 @@ export default function Kilpailuohjeet() {
         <Tab.Panels>
           <Tab.Panel>
             <p className="m-auto mb-12 text-center font-bold text-white">
-              Kilpailuohjeet päivitetty 21.8.2024 klo 22:00
+              Kilpailuohjeita tarkennetaan lähempänä ajankohtana kilpailua.
             </p>
-            <div className="prose prose-invert m-auto max-w-[80ch]">
+            <div className="prose prose-invert m-auto max-w-[80ch] text-white">
               <KilpailuohjeetLaitila />
             </div>
           </Tab.Panel>
           <Tab.Panel>
             <p className="m-auto mb-12 text-center font-bold text-white">
-              Kilpailuohjeet päivitetty 21.8.2024 klo 22:00
+              Kilpailuohjeita tarkennetaan lähempänä ajankohtana kilpailua.
             </p>
-            <div className="prose prose-invert m-auto max-w-[80ch]">
+            <div className="prose prose-invert m-auto max-w-[80ch] text-white">
               <KilpailuohjeetUki />
             </div>
           </Tab.Panel>

@@ -12,8 +12,9 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Nuorten SM-moniottelut",
-  description: "M/N 22-19-17 ja T/P14-15 SM-moniotteluiden kotisivut",
+  title: "Nuorten SM-moniottelut 2026",
+  description:
+    "M/N 22-19-17 ja T/P14-15 SM-moniotteluiden kotisivut vuodelle 2026",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 

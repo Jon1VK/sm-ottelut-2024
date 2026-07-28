@@ -1,8 +1,6 @@
 "use client";
 
-import { Tab } from "@headlessui/react";
 import { useAtom } from "jotai";
-import { Fragment } from "react";
 import { selectedTabIndexAtom } from "../atoms";
 
 function classNames(...classes: string[]) {
@@ -16,7 +14,11 @@ export default function Home() {
       <h1 className="mx-auto mb-16 max-w-fit rounded-bl-[25%] rounded-tr-[25%] border px-4 py-2 text-center text-xl font-semibold tracking-tight text-white md:px-12">
         Tulokset
       </h1>
-      <Tab.Group
+      <p className="mx-auto mb-24 max-w-3xl text-center text-white">
+        Kilpailuissa on käytössä live-tulospalvelu. Linkit live-tuloksiin
+        päivittyvät sivuille kilpailuviikolla.
+      </p>
+      {/* <Tab.Group
         selectedIndex={selectedTabIndex}
         onChange={setSelectedTabIndex}
       >
@@ -80,7 +82,7 @@ export default function Home() {
             </div>
           </Tab.Panel>
         </Tab.Panels>
-      </Tab.Group>
+      </Tab.Group> */}
     </>
   );
 }
