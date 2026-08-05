@@ -45,7 +45,7 @@ export default function Home() {
         </div>
         <div className="max-w-3xl text-center">
           <h2 className="text-3xl font-extrabold tracking-tight text-white lg:text-4xl">
-            T/P 14-15
+            N/M 14-15
           </h2>
           <p className="mt-10 text-sm text-white/70">
             Sorvakon urheilukenttä:{" "}
@@ -75,6 +75,13 @@ export default function Home() {
             >
               Kilpailuohjeet <span aria-hidden="true">→</span>
             </Link>
+            <a
+              href="/Ruokailu Uusikaupunki.png"
+              target="_blank"
+              className="text-sm font-semibold leading-6 text-white hover:underline"
+            >
+              Ruokatilaukset <span aria-hidden="true">→</span>
+            </a>
           </div>
         </div>
       </div>

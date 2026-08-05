@@ -10,9 +10,10 @@ export type NavigationLink = {
 const links: NavigationLink[] = [
   { name: "Etusivu", href: "/" },
   { name: "Aikataulut", href: "/aikataulut" },
-  { name: "Kilpailuohjeet", href: "/kilpailuohjeet" },
   { name: "Tulokset", href: "/tulokset" },
+  { name: "Kilpailuohjeet", href: "/kilpailuohjeet" },
   { name: "Majoitus", href: "/majoitus" },
+  { name: "Yhteystiedot", href: "/yhteystiedot" },
 ];
 
 export default function Header() {
