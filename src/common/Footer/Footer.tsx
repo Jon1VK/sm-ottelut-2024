@@ -59,7 +59,7 @@ export default function Footer() {
           {
             src: "/vv.png",
             alt: "Vahva Virta",
-            href: "https://laitilanpuhelin.fi/vahvavirta/",
+            href: "https://vahvavirta.fi/",
           },
         ]}
       />
