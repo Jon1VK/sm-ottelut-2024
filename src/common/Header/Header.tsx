@@ -12,7 +12,6 @@ const links: NavigationLink[] = [
   { name: "Aikataulut", href: "/aikataulut" },
   { name: "Tulokset", href: "/tulokset" },
   { name: "Kilpailuohjeet", href: "/kilpailuohjeet" },
-  { name: "Majoitus", href: "/majoitus" },
   { name: "Yhteystiedot", href: "/yhteystiedot" },
 ];
 
