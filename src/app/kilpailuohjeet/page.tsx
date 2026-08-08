@@ -47,7 +47,7 @@ export default function Kilpailuohjeet() {
         <Tab.Panels>
           <Tab.Panel>
             <p className="m-auto mb-12 text-center text-white">
-              Kilpailuohjeet päivitetty 5.8.2026 klo 23:00
+              Kilpailuohjeet päivitetty 8.8.2026 klo 21:30
             </p>
             <p className="mb-12 flex justify-center text-center font-bold text-white">
               <a
@@ -65,7 +65,7 @@ export default function Kilpailuohjeet() {
           </Tab.Panel>
           <Tab.Panel>
             <p className="m-auto mb-12 text-center text-white">
-              Kilpailuohjeet päivitetty 8.8.2026 klo 11:00
+              Kilpailuohjeet päivitetty 8.8.2026 klo 21:30
             </p>
             <p className="mb-12 flex flex-wrap justify-center gap-4 text-center font-bold text-white">
               {[
