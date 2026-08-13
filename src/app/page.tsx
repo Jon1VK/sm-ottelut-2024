@@ -28,9 +28,16 @@ export default function Home() {
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
             <a
-              href="https://www.kilpailukalenteri.fi/?cs=16&nid=38453"
+              href="https://live.tuloslista.com/20363"
               target="_blank"
               className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+            >
+              LIVE-tulokset <span aria-hidden="true">→</span>
+            </a>
+            <a
+              href="https://www.kilpailukalenteri.fi/?cs=16&nid=38453"
+              target="_blank"
+              className="text-sm font-semibold leading-6 text-white hover:underline"
             >
               Kilpailukalenteri <span aria-hidden="true">→</span>
             </a>

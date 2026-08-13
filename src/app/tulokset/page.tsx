@@ -1,6 +1,8 @@
 "use client";
 
+import { Tab } from "@headlessui/react";
 import { useAtom } from "jotai";
+import { Fragment } from "react";
 import { selectedTabIndexAtom } from "../atoms";
 
 function classNames(...classes: string[]) {
@@ -14,16 +16,12 @@ export default function Home() {
       <h1 className="mx-auto mb-16 max-w-fit rounded-bl-[25%] rounded-tr-[25%] border px-4 py-2 text-center text-xl font-semibold tracking-tight text-white md:px-12">
         Tulokset
       </h1>
-      <p className="mx-auto mb-24 max-w-3xl text-center text-white">
-        Kilpailuissa on käytössä live-tulospalvelu. Linkit live-tuloksiin
-        päivittyvät sivuille kilpailuviikolla.
-      </p>
-      {/* <Tab.Group
+      <Tab.Group
         selectedIndex={selectedTabIndex}
         onChange={setSelectedTabIndex}
       >
         <Tab.List className="isolate m-auto mb-16 flex max-w-max divide-x divide-indigo-800 rounded-lg shadow">
-          {["M/N 22-19-17", "T/P 14-15"].map((tab, tabIdx, tabs) => (
+          {["M/N 22-19-17", "N/M 14-15"].map((tab, tabIdx, tabs) => (
             <Tab key={tab} as={Fragment}>
               {({ selected }) => (
                 <button
@@ -44,45 +42,30 @@ export default function Home() {
         </Tab.List>
         <Tab.Panels>
           <Tab.Panel>
-            <div className="prose prose-invert m-auto max-w-[80ch]">
-              <ul>
-                <li>
-                  <a href="https://live.tuloslista.com/15954" target="_blank">
+            <div className="prose prose-invert m-auto max-w-[80ch] text-white">
+              <ul className="flex list-none flex-col items-center pl-0">
+                <li className="pl-0">
+                  <a href="https://live.tuloslista.com/20363" target="_blank">
                     LIVE-tulokset
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://drive.google.com/drive/folders/1e0aaId3R-8P6ZH2OYPWIxJ7JVclCGaat?usp=sharing"
-                    target="_blank"
-                  >
-                    Maalikamerakuvat
                   </a>
                 </li>
               </ul>
             </div>
           </Tab.Panel>
           <Tab.Panel>
-            <div className="prose prose-invert m-auto max-w-[80ch]">
-              <ul>
-                <li>
+            <div className="prose prose-invert m-auto max-w-[80ch] text-white">
+              <ul className="flex list-none flex-col items-center pl-0">
+                <li className="pl-0">Linkki päivitetään sivuille piakkoin!</li>
+                {/* <li className="pl-0">
                   <a href="https://live.tuloslista.com/15960" target="_blank">
                     LIVE-tulokset
                   </a>
-                </li>
-                <li>
-                  <a
-                    href="https://uusikaupunki-my.sharepoint.com/:x:/g/personal/riikka_matikainen_uusikaupunki_fi/EasJnVJBEjJLlnhcO1zAqX0BfjCSU3z1cOCRmEGc0zsoow?e=X8P1gp&nav=MTVfezVBNzA3NEEyLUExQzQtNEYwNS1BRkZCLUVCQzgzQjcyRjBDRX0"
-                    target="_blank"
-                  >
-                    Joukkuepisteet
-                  </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </Tab.Panel>
         </Tab.Panels>
-      </Tab.Group> */}
+      </Tab.Group>
     </>
   );
 }

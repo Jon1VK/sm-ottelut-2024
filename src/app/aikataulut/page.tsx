@@ -1,5 +1,6 @@
 "use client";
 
+import { Tab } from "@headlessui/react";
 import { useAtom } from "jotai";
 import { Fragment } from "react";
 import { selectedTabIndexAtom } from "../atoms";
@@ -13,7 +14,7 @@ type TimeTable = { time: string; events: Event[] }[];
 
 const timeTablesLaitila = [
   {
-    title: "Lauantai 24.8.",
+    title: "Lauantai 15.8.",
     timetable: [
       {
         time: "10:00",
@@ -74,11 +75,11 @@ const timeTablesLaitila = [
         events: [{ sarja: "M17", event: "Kuula" }],
       },
       {
-        time: "16:00",
+        time: "15:30",
         events: [{ sarja: "N22", event: "200m" }],
       },
       {
-        time: "16:10",
+        time: "15:40",
         events: [{ sarja: "N19", event: "200m" }],
       },
       {
@@ -94,17 +95,17 @@ const timeTablesLaitila = [
         events: [{ sarja: "M19", event: "400m" }],
       },
       {
-        time: "18:00",
-        events: [{ sarja: "N17", event: "200m" }],
+        time: "17:45",
+        events: [{ sarja: "M17", event: "400m" }],
       },
       {
-        time: "18:25",
-        events: [{ sarja: "M17", event: "400m" }],
+        time: "18:10",
+        events: [{ sarja: "N17", event: "200m" }],
       },
     ],
   },
   {
-    title: "Sunnuntai 25.8.",
+    title: "Sunnuntai 16.8.",
     timetable: [
       {
         time: "10:00",
@@ -133,7 +134,10 @@ const timeTablesLaitila = [
       },
       {
         time: "12:30",
-        events: [{ sarja: "M22, M19", event: "Seiväs (paikat 1 ja 2)" }],
+        events: [
+          { sarja: "M22", event: "Seiväs (paikka 1)" },
+          { sarja: "M19", event: "Seiväs (paikka 2)" },
+        ],
       },
       {
         time: "13:15",
@@ -169,15 +173,15 @@ const timeTablesLaitila = [
       },
       {
         time: "17:20",
-        events: [{ sarja: "M22", event: "1500" }],
+        events: [{ sarja: "M22", event: "1500m" }],
       },
       {
         time: "17:30",
-        events: [{ sarja: "M19", event: "1500" }],
+        events: [{ sarja: "M19", event: "1500m" }],
       },
       {
         time: "18:25",
-        events: [{ sarja: "M17", event: "1500" }],
+        events: [{ sarja: "M17", event: "1500m" }],
       },
     ],
   },
@@ -185,7 +189,7 @@ const timeTablesLaitila = [
 
 const timeTablesUki = [
   {
-    title: "Lauantai 24.8.",
+    title: "Lauantai 15.8.",
     timetable: [
       {
         time: "8:30",
@@ -269,7 +273,7 @@ const timeTablesUki = [
     ],
   },
   {
-    title: "Sunnuntai 25.8.",
+    title: "Sunnuntai 16.8.",
     timetable: [
       {
         time: "8:30",
@@ -355,17 +359,12 @@ export default function Aikataulut() {
       <h1 className="mx-auto mb-16 max-w-fit rounded-bl-[25%] rounded-tr-[25%] border px-4 py-2 text-center text-xl font-semibold tracking-tight text-white md:px-12">
         Aikataulut
       </h1>
-      <p className="mx-auto mb-24 max-w-3xl text-center text-white">
-        Aikataulut julkaistaan ilmoittautumisajan päätyttyä. Aikataulut
-        päivittyvät ensin kilpailukalenteriin, joten katso viimeisimmät
-        aikataulut sieltä.
-      </p>
-      {/* <Tab.Group
+      <Tab.Group
         selectedIndex={selectedTabIndex}
         onChange={setSelectedTabIndex}
       >
         <Tab.List className="isolate m-auto mb-16 flex max-w-max divide-x divide-indigo-800 rounded-lg shadow">
-          {["M/N 22-19-17", "T/P 14-15"].map((tab, tabIdx, tabs) => (
+          {["M/N 22-19-17", "N/M 14-15"].map((tab, tabIdx, tabs) => (
             <Tab key={tab} as={Fragment}>
               {({ selected }) => (
                 <button
@@ -386,8 +385,19 @@ export default function Aikataulut() {
         </Tab.List>
         <Tab.Panels>
           <Tab.Panel>
-            <p className="m-auto mb-12 text-center font-bold text-white">
-              Aikataulu päivitetty 21.8.2024 klo 22:00
+            <p className="m-auto mb-4 text-center text-white">
+              Aikataulu päivitetty 13.8.2026 klo 22:00
+            </p>
+            <p className="m-auto mb-12 text-center text-white">
+              Kokoontumisaikataulun löydät{" "}
+              <a
+                href="https://www.kilpailukalenteri.fi/?cs=17&nid=38453"
+                target="_blank"
+                className="font-bold text-indigo-400 hover:underline"
+              >
+                kilpailukalenterista
+              </a>
+              .
             </p>
             <div className="m-auto grid w-full grid-cols-1 gap-x-8 gap-y-16 text-white md:grid-cols-2 lg:max-w-7xl">
               {timeTablesLaitila.map(({ title, timetable }) => (
@@ -400,10 +410,10 @@ export default function Aikataulut() {
             </div>
           </Tab.Panel>
           <Tab.Panel>
-            <p className="m-auto mb-12 text-center font-bold text-white">
-              Aikataulu päivitetty 24.8.2024 klo 8:00
+            <p className="m-auto mb-12 text-center text-white">
+              Aikataulu päivitetään pian!
             </p>
-            <div className="m-auto grid w-full grid-cols-1 gap-x-8 gap-y-16 text-white md:grid-cols-2 lg:max-w-7xl">
+            {/* <div className="m-auto grid w-full grid-cols-1 gap-x-8 gap-y-16 text-white md:grid-cols-2 lg:max-w-7xl">
               {timeTablesUki.map(({ title, timetable }) => (
                 <TimeTableComponent
                   key={title}
@@ -411,10 +421,10 @@ export default function Aikataulut() {
                   timetable={timetable}
                 />
               ))}
-            </div>
+            </div> */}
           </Tab.Panel>
         </Tab.Panels>
-      </Tab.Group> */}
+      </Tab.Group>
     </>
   );
 }
