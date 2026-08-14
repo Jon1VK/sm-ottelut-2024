@@ -62,19 +62,19 @@ export default function Home() {
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
             <a
-              href="https://www.kilpailukalenteri.fi/?cs=16&nid=38438"
+              href="https://live.tuloslista.com/20350"
               target="_blank"
               className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
             >
-              Kilpailukalenteri <span aria-hidden="true">→</span>
+              LIVE-tulokset <span aria-hidden="true">→</span>
             </a>
-            {/* <a
-              href="https://uusikaupunki-my.sharepoint.com/:x:/g/personal/riikka_matikainen_uusikaupunki_fi/EasJnVJBEjJLlnhcO1zAqX0BfjCSU3z1cOCRmEGc0zsoow?e=X8P1gp&nav=MTVfezVBNzA3NEEyLUExQzQtNEYwNS1BRkZCLUVCQzgzQjcyRjBDRX0"
+            <a
+              href="https://www.kilpailukalenteri.fi/?cs=16&nid=38438"
               target="_blank"
               className="text-sm font-semibold leading-6 text-white hover:underline"
             >
-              Joukkuepisteet <span aria-hidden="true">→</span>
-            </a> */}
+              Kilpailukalenteri <span aria-hidden="true">→</span>
+            </a>
             <Link
               href="/kilpailuohjeet"
               className="text-sm font-semibold leading-6 text-white hover:underline"
@@ -82,13 +82,6 @@ export default function Home() {
             >
               Kilpailuohjeet <span aria-hidden="true">→</span>
             </Link>
-            <a
-              href="/Ruokailu Uusikaupunki.png"
-              target="_blank"
-              className="text-sm font-semibold leading-6 text-white hover:underline"
-            >
-              Ruokatilaukset <span aria-hidden="true">→</span>
-            </a>
           </div>
         </div>
       </div>

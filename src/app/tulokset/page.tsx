@@ -55,12 +55,11 @@ export default function Home() {
           <Tab.Panel>
             <div className="prose prose-invert m-auto max-w-[80ch] text-white">
               <ul className="flex list-none flex-col items-center pl-0">
-                <li className="pl-0">Linkki päivitetään sivuille piakkoin!</li>
-                {/* <li className="pl-0">
-                  <a href="https://live.tuloslista.com/15960" target="_blank">
+                <li className="pl-0">
+                  <a href="https://live.tuloslista.com/20350" target="_blank">
                     LIVE-tulokset
                   </a>
-                </li> */}
+                </li>
               </ul>
             </div>
           </Tab.Panel>
