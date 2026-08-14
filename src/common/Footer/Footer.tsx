@@ -116,6 +116,8 @@ export default function Footer() {
               "Laitilan Ykkösapteekki",
               "Terveyskoti",
               "HMH-poraus Oy",
+              "Jätehuolto Helistölä",
+              "Tapio Pääkkö",
             ].map((sponsor) => (
               <li
                 key={sponsor}
