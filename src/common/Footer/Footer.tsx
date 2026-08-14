@@ -118,6 +118,7 @@ export default function Footer() {
               "HMH-poraus Oy",
               "Jätehuolto Helistölä",
               "Tapio Pääkkö",
+              "Rakennepalvelu Jurva Rinne Oy",
             ].map((sponsor) => (
               <li
                 key={sponsor}
