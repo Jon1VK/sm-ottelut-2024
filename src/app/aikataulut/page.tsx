@@ -265,7 +265,7 @@ const timeTablesUki = [
         ],
       },
       {
-        time: "11:25",
+        time: "11:20",
         events: [{ sarja: "M14", event: "Pituus" }],
       },
       {
